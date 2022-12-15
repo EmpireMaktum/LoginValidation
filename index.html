@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-size: cover;
+            background-position: center;
+            font-family: normal;
+        }
+        .box{
+            
+            margin-top: 5%;
+            margin-left: 15%;
+            max-width: 600px;
+            height: 1000px;
+            background: rgb(14, 12, 11);
+            border: 2px solid black;
+        }
+        .former{
+            margin-top: 5%;
+            width: 555px;
+            height: 650px;
+            margin-left: 20px;
+            background: antiquewhite;
+            border: 2px solid black;
+        }
+        .name1{
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20pt;
+            font-weight: 600;
+            font-family: normal;
+            margin-top: 20px;
+        }
+        .data{
+            margin-left: 50px;
+            color: #000;
+            font-size: 14pt;
+            font-weight: 400;
+           
+
+        }
+        input[type=text]{
+            margin-left: 50px;
+            width: 400px;
+            height: 40px;
+            margin-bottom: 10px;
+            border: 2px solid silver;
+            outline: none;
+            padding-left: 10px;
+            font-size: 14pt;
+            font-weight: 600;
+        }
+
+        select{
+            margin-left: 50px;
+            width: 360px;
+            height: 40px;
+            margin-bottom: 10px;
+            border: 2px solid silver;
+            outline: none;
+            padding-left: 10px;
+            font-size: 10pt;
+            font-weight: 600;
+           
+        }
+        button{
+            margin-left: 50px;
+            width: 360px;
+            height: 40px;
+            margin-bottom: 10px;
+            border: 2px solid silver;
+            outline: none;
+            padding-left: 10px;
+            background: green;
+            border: 2px solid green;
+            color: #fff;
+        }
+        .line{
+            border: 2px solid white;
+            width: 395px;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="Form">
+        <div class="box">
+            <div class="former">
+                <h3 class="name1">Former Details</h3>
+                <div class="line"></div>
+                <label class="data">Former Name</label>
+                <div class="input"><input type="text" id="forname" name="forname"/></div>
+
+                <label class="data">Former ID</label>
+                <div class="input"><input type="text" id="FID" name="FID"/></div>
+
+                <label class="data">Former Mobile</label>
+                <div class="input"><input type="text" id="formobile" name="formobile"/></div>
+
+                <label class="data">District</label>
+                <div class="input"><select name="dist" id="dist">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div>
+                <label class="data">Taluck</label><br>
+                <div class="input"><select name="Taluck" id="Taluck">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div>
+                <label class="data">Village</label><br>
+                <div class="input"><select name="Village" id="Village">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div><br>
+                <button class="btn">Next</button>
+            </div><!--Former Div End-->
+           <!-- <h3 class="name2">Landrecord</h3>
+            <div class="Landrecord">
+                <label class="data">Land District</label>
+                <div class="input"><select name="dist" id="dist">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div>
+                <label class="data">Land Taluck</label><br>
+                <div class="input"><select name="Taluck" id="Taluck">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div>
+                <label class="data">Land Village</label><br>
+                <div class="input"><select name="Village" id="Village">
+                    <option>Select</option>
+                    <option>Gadag</option>
+                    <option>Mulgund</option>
+                    <option>Shirahatti</option>
+                </select></div>
+
+                <label class="data">Survey Num</label>
+                <div class="input"><input type="text" id="Survey" name="Survey"/></div>
+
+                <label class="data">Hissa</label>
+                <div class="input"><input type="text" id="Hissa" name="Hissa"/></div>
+            </div><!--Land Record End--> 
+        </div>
+    </form>
+</body>
+</html>

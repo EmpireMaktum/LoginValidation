@@ -1,0 +1,55 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function School(name,addr,reg,fees){
+            this.Name = name,
+            this.Address = addr,
+            this.Reg = reg,
+            this.Fees = fees,
+            library = ["Ajay","Kamadolli",20,"HI"]
+        }
+        var Schoolone = new School("Vassim","KotiOni","15","5000");
+        var Schooltwo = new School("Abu Fasil","Islamabad","42","8000");
+        var Schoolthree = new School("Azhar","AhemadNagar","25","1000");
+        
+        console.log(Schoolone);
+        console.log(Schooltwo);
+       console.log(Schoolthree);
+
+       Schoolone.Fullinfo = function(){
+          return this.Name + " " + this.Address + " " + this.Reg + " " + " " + this.Fees; 
+        }
+        Schooltwo.Fullinfo2 = function(){
+            return this.Name + " " + this.Address + " " + this.Reg + " " + this.Fees;
+        }
+        Schoolthree.Fullinfo3 = function(){
+            return this.Name + " " + this.Address + " " + this.Reg + " " + this.Fees;
+        }
+        console.log(Schoolone.Fullinfo());
+        console.log(Schooltwo.Fullinfo2());
+        console.log(Schoolthree.Fullinfo3()); 
+        console.log(library);
+        console.log(library.length);
+
+    /*   for(let key in Schoolone){
+            console.log(key + " : " +  Schoolone[key]);
+        }
+    
+        for(let key in Schooltwo){
+            console.log(key + " : " +  Schooltwo[key]);
+        }
+        for(let key in Schoolthree){
+            console.log(key + " : " +  Schoolthree[key]);
+        }*/
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
